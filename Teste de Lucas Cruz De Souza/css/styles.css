@@ -1,0 +1,537 @@
+:root {
+  --main-color: #d92123;
+  --secondary-color: #868686;
+  --tertiary-color: #7a7266;
+  --primary-text-color: #fff;
+  --secondary-text-color: #191919;
+  --secondary-bg-color: #5c1011;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 6%;
+}
+
+#header {
+  min-height: 95vh;
+  background-image: url("../img/slider-d.png");
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-text-color);
+  position: relative;
+  font-size: 16px;
+}
+
+#innerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#meu {
+  margin-top: 1rem;
+}
+
+#brand {
+  margin-left: 3rem;
+}
+
+#navbar {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+#navbar a {
+  color: var(--primary-text-color);
+  padding: 1rem;
+}
+
+#navbar a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.botao {
+  width: 6rem;
+  height: 3rem;
+  margin-right: 3rem;
+  border: none;
+}
+
+.botao:hover {
+  border: solid 2.5px black;
+  cursor: pointer;
+}
+.capa {
+  display: block;
+  width: 60%;
+  height: 150px;
+  position: absolute;
+  z-index: 1;
+  left: 23%;
+  top: 38%;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+.capa h3 {
+  text-align: center;
+  font-size: 112%;
+  font-weight: 500;
+}
+
+.capa h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 564%;
+  text-align: center;
+}
+.capa button {
+  background-color: var(--tertiary-color);
+  position: relative;
+  width: 25%;
+  height: 2.6rem;
+  border: none;
+  color: var(--primary-text-color);
+  gap: 1rem;
+}
+
+.capa button:hover {
+  cursor: pointer;
+}
+.capa .reservas {
+  background-color: #5a493e;
+}
+
+.textImageSection {
+  height: 40rem;
+  background-color: #6c6359;
+}
+
+.container {
+  position: relative;
+  padding: 0.5rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.galleryWrapper {
+  overflow-x: auto;
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  cursor: pointer;
+  border: none;
+  width: 7%;
+  height: 13%;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  opacity: 1;
+}
+
+.arrowRight {
+  right: 0;
+  left: auto;
+  text-align: center;
+  width: 7%;
+  height: 13%;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+}
+.vector {
+  width: 43%;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+}
+
+.currentItem {
+  opacity: 1;
+}
+.link {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.galleryWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.galleryWrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.textContainer {
+  flex: 2 1 0;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  background-color: #6c6359;
+}
+
+.sectionSubtitle {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 52px;
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-top: 4.3rem;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  height: 40rem;
+  background-color: #eeeeee;
+}
+figure {
+  display: flex;
+}
+
+.motel {
+  width: 40%;
+  margin-left: -1rem;
+  position: relative;
+  bottom: 2rem;
+}
+.box {
+  width: 40%;
+}
+
+#cortesia {
+  position: relative;
+  background-color: #6c6359;
+  height: 35rem;
+}
+
+#cortesia h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  color: white;
+  top: 1rem;
+}
+
+.employees {
+  display: flex;
+  text-align: center;
+}
+.employees img {
+  width: 85%;
+  margin-left: 48%;
+}
+.btnCortesia {
+  position: absolute;
+  bottom: 4rem;
+  left: 45%;
+  background-color: #2a2a2a;
+  height: 2rem;
+  width: 11rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#localization {
+  background-color: #eeeeee;
+  gap: 0;
+  padding-bottom: 5rem;
+  height: 30rem;
+}
+
+.localizacao {
+  width: 30%;
+  margin-left: -1rem;
+}
+.mapa {
+  width: 30%;
+}
+
+#footer {
+  color: var(--primary-text-color);
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 3rem 5rem;
+  margin-top: 7rem;
+}
+.footerBrand {
+  margin-left: -3rem;
+  margin-top: -3rem;
+  width: 129%;
+}
+.subtitulo {
+  font-size: 13px;
+}
+
+#footer a {
+  color: var(--primary-text-color);
+}
+
+.contactInfo,
+.linksContainer {
+  width: 20%;
+  font-size: 14px;
+}
+.inicio {
+  margin-bottom: 1rem;
+}
+.footerBrand h2 {
+  margin-bottom: 0.5rem;
+}
+
+.phoneNumber {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 2rem;
+  color: white;
+}
+
+#menu,
+#closeMenu {
+  font-size: 2rem;
+  padding: 1rem;
+  display: none;
+}
+
+#closeMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#mobileNavbar {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  transition: 0.4s;
+  z-index: 5;
+}
+
+#mobileNavbar.menuActive {
+  left: 0;
+}
+
+#mobileNavbar a {
+  color: var(--primary-text-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--main-color);
+}
+.oBox {
+  display: none;
+}
+.titulo {
+  margin-top: -5%;
+}
+.vison {
+  margin-top: -4%;
+}
+
+@media (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+  .oBox {
+    display: none;
+  }
+
+  #innerHeader {
+    background-color: #2a2a2a;
+    position: relative;
+    top: 36rem;
+  }
+  .botao {
+    background-color: #7a7266;
+  }
+  .desc {
+    color: #fff;
+  }
+  .capa h1 {
+    font-size: 40px;
+  }
+  #brand {
+    margin-left: 1.4rem;
+    margin-top: -1rem;
+  }
+
+  #navbar {
+    display: none;
+  }
+  #menu,
+  #closeMenu {
+    display: block;
+    color: #fff;
+    margin-right: 2.5rem;
+  }
+  .employees img {
+    width: 55%;
+  }
+  #cortesia{
+   height: 20rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .capa h1 {
+    font-size: 35px;
+  }
+  .motel {
+    width: 106%;
+    margin-left: -1rem;
+    position: relative;
+    bottom: 5rem;
+  }
+  .box {
+    display: none;
+  }
+
+  .oBox {
+    display: block;
+    width: 75%;
+    position: relative;
+    z-index: 1;
+    left: 1rem;
+    height: 30rem;
+    bottom: 19rem;
+  }
+  .sectionSubtitle {
+    font-size: 32px;
+  }
+  .link {
+    margin-top: 5rem;
+  }
+  #about {
+    height: 43rem;
+  }
+
+  .localizacao {
+    position: relative;
+    right: 66%;
+    top: 14rem;
+    width: 77%;
+    height: 11rem;
+  }
+  .mapa {
+    position: relative;
+    height: 14rem;
+    width: 76%;
+    left: 6%;
+  }
+  img {
+    width: 45%;
+    margin-left: 10%;
+  }
+  .vison {
+    margin-top: -4%;
+  }
+
+  .textContainer {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  #cortesia {
+    height: 61rem;
+  }
+
+  #cortesia h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+
+  .employees {
+    flex-wrap: wrap;
+    position: relative;
+    left: -25%;
+  }
+  .employees img {
+    width: 63%;
+    margin-left: 47%;
+  }
+  .btnCortesia {
+    bottom: -3rem;
+    left: 51%;
+  }
+
+  #footer {
+    flex-wrap: wrap;
+    margin-top: 12rem;
+  }
+
+  .footerBrand {
+    text-align: center;
+  }
+
+  .linksContainer {
+    margin-bottom: 1rem;
+  }
+  .contactInfo,
+  .linksContainer {
+    width: 100%;
+  }
+  .footer {
+    font-size: 8px;
+  }
+  .capa button {
+    width: 33%;
+  }
+  #brand {
+    margin-left: 2.4rem;
+  }
+}
